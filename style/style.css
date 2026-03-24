@@ -9,7 +9,7 @@ body {
     background-color: #f5f5f5;
 }
 
-
+/* HEADER */
 .section-1 {
     display: block;
     background-color: #FFD700;
@@ -29,23 +29,24 @@ body {
     font-style: italic;
 }
 
-
+/* MAIN LAYOUT */
 .main-container {
-    display: grid;
-    grid-template-columns: 150px 1fr 150px;
-    height: 70vh;
-    gap: 0;
+    display: block;
+    height: auto;
+    font-size: 0;
+    /* прибирає відступи між inline-block */
 }
 
-
+/* SIDEBAR LEFT */
 .section-2 {
-    display: table-cell;
+    display: inline-block;
+    width: 150px;
     background-color: #4169E1;
     color: white;
     padding: 25px;
-    overflow-y: auto;
     vertical-align: top;
     transform: rotate(-3deg);
+    font-size: 16px;
 }
 
 .section-2 h2 {
@@ -68,16 +69,18 @@ body {
     border-bottom: none;
 }
 
-
+/* CONTENT */
 .section-3 {
-    display: table-cell;
+    display: inline-block;
+    width: calc(100% - 300px);
     background-color: white;
     padding: 30px;
-    overflow-y: auto;
     border-left: 2px solid #ddd;
     border-right: 2px solid #ddd;
     vertical-align: top;
-    height: 100%;
+    font-size: 16px;
+    height: 600px;
+    overflow-y: auto;
 }
 
 .section-3 h2 {
@@ -101,14 +104,15 @@ body {
     margin-bottom: 15px;
 }
 
-
+/* SIDEBAR RIGHT */
 .section-4 {
-    display: table-cell;
+    display: inline-block;
+    width: 150px;
     background-color: #4169E1;
     color: white;
     padding: 25px;
-    overflow-y: auto;
     vertical-align: top;
+    font-size: 16px;
 }
 
 .section-4 h2 {
@@ -131,7 +135,7 @@ body {
     border-bottom: none;
 }
 
-
+/* FOOTER */
 .section-5 {
     display: block;
     background-color: #FFD700;
