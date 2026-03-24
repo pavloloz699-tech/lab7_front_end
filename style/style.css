@@ -33,8 +33,11 @@ body {
 .main-container {
     display: block;
     height: auto;
-    font-size: 0;
+    <<<<<<< HEAD font-size: 0;
     /* прибирає відступи між inline-block */
+    =======font-size: 0;
+    /* прибирає відступи між inline-block */
+    >>>>>>>e5ed8856bd96eeab7b2d0ebd9334b5bf18b2ba1a
 }
 
 /* SIDEBAR LEFT */
@@ -81,6 +84,8 @@ body {
     font-size: 16px;
     height: 600px;
     overflow-y: auto;
+
+    >>>e5ed8856bd96eeab7b2d0ebd9334b5bf18b2ba1a
 }
 
 .section-3 h2 {
