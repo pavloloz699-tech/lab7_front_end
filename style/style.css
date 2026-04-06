@@ -9,142 +9,134 @@ body {
     background-color: #f5f5f5;
 }
 
-/* HEADER */
+/* СЕКЦІЯ 1: Шапка */
 .section-1 {
+    text-align: center;
     display: block;
     background-color: #FFD700;
-    color: #000;
-    padding: 30px;
-    text-align: center;
+    padding: 20px 30px;
+
+    /* Інпут і текст тепер зліва */
     border-bottom: 3px solid #FFC700;
 }
 
-.section-1 h1 {
-    font-size: 2.5rem;
+.search {
+    position: absolute;
+    left: 30px;
+    display: block;
+    width: 200px;
+    padding: 5px;
     margin-bottom: 10px;
+    border: 1px solid #333;
 }
 
-.section-1 p {
-    font-size: 1.2rem;
-    font-style: italic;
+.section-1 h1 {
+    font-size: 2rem;
+    margin: 5px 0;
 }
 
-/* MAIN LAYOUT */
+/* КОНТЕЙНЕР ДЛЯ ВСЬОГО ЦЕНТРУ */
 .main-container {
     display: block;
-    height: auto;
+    width: 100%;
     font-size: 0;
-
-
+    /* Щоб прибрати пробіли між inline-block */
+    padding: 20px 10px;
 }
 
-/* SIDEBAR LEFT */
+/* БЛОК 2 (Лівий) */
 .section-2 {
     display: inline-block;
-    width: 150px;
+    width: 180px;
     background-color: #4169E1;
     color: white;
-    padding: 25px;
+    padding: 20px;
     vertical-align: top;
     transform: rotate(-3deg);
     font-size: 16px;
+    white-space: normal;
 }
 
-.section-2 h2 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    border-bottom: 2px solid white;
-    padding-bottom: 10px;
-}
-
-.section-2 ul {
-    list-style: none;
-}
-
-.section-2 li {
-    padding: 8px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.section-2 li:last-child {
-    border-bottom: none;
-}
-
-/* CONTENT */
-.section-3 {
+/* ПРАВА ЧАСТИНА */
+.right-group {
     display: inline-block;
-    width: calc(100% - 300px);
-    background-color: white;
-    padding: 30px;
-    border-left: 2px solid #ddd;
-    border-right: 2px solid #ddd;
+    /* Займає весь залишок ширини: 100% - ширина Блоку 2 - відступи */
+    width: calc(100% - 210px);
     vertical-align: top;
-    font-size: 16px;
-    height: 600px;
-    overflow-y: auto;
-
-
+    margin-left: 20px;
+    font-size: 0;
+    text-align: left;
 }
 
-.section-3 h2 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #4169E1;
-    padding-bottom: 10px;
-}
-
-.section-3 h3 {
-    font-size: 1.2rem;
-    color: #4169E1;
-    margin-top: 20px;
+.top-red {
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-color: #ff4d4d;
     margin-bottom: 10px;
 }
 
-.section-3 p {
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 15px;
+.columns-container {
+    width: 100%;
+    font-size: 0;
 }
 
-/* SIDEBAR RIGHT */
-.section-4 {
+/* БЛОК 3 (Білий, по центру) */
+.section-3 {
     display: inline-block;
-    width: 150px;
-    background-color: #4169E1;
-    color: white;
+    /* Розрахунок ширини: 100% мінус ширина Блоку 4 */
+    width: calc(100% - 170px);
+    background-color: white;
     padding: 25px;
     vertical-align: top;
     font-size: 16px;
+    height: 550px;
+    /* Висота для скролу */
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    white-space: normal;
 }
 
-.section-4 h2 {
-    font-size: 1.5rem;
+/* БЛОК 4 (Синій, розтягнутий вправо) */
+.section-4 {
+    display: inline-block;
+    width: 160px;
+    /* Фіксована ширина правої колонки */
+    background-color: #4169E1;
+    color: white;
+    padding: 20px;
+    vertical-align: top;
+    margin-left: 10px;
+    font-size: 16px;
+    white-space: normal;
+    min-height: 400px;
+}
+
+/* ТЕКСТОВІ СТИЛІ */
+.section-3 h2 {
+    border-bottom: 2px solid #4169E1;
+    padding-bottom: 5px;
     margin-bottom: 15px;
-    border-bottom: 2px solid white;
-    padding-bottom: 10px;
 }
 
+.section-2 ul,
 .section-4 ul {
     list-style: none;
 }
 
+.section-2 li,
 .section-4 li {
-    padding: 8px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.section-4 li:last-child {
-    border-bottom: none;
-}
-
-/* FOOTER */
+/* ФУТЕР */
 .section-5 {
     display: block;
     background-color: #FFD700;
-    color: #000;
     padding: 20px;
     text-align: center;
-    border-top: 3px solid #FFC700;
     font-weight: bold;
+    font-size: 16px;
+    border-top: 3px solid #FFC700;
 }
